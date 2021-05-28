@@ -1,5 +1,5 @@
 # shakelock
-A command line tool for text and file encryption. When encrypting a text string the output is also an equally long text string. This makes shakelock suitable for encrypting text that is to be written down, such as cryptocurrency seed phrases.
+A command line tool for text and file encryption. When encrypting text the output is also an equally long text. This makes shakelock suitable for encrypting text that is to be written down, such as cryptocurrency seed phrases.
 
 ### Binaries
 Binaries for linux and windows [here](https://github.com/krutnicolai22/shakelock/releases).
