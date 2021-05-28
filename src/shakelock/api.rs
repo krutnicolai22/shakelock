@@ -81,10 +81,10 @@ pub fn textual(in_file: &String, alphabet: &String, add: bool, prompt_in: bool, 
     if prompt_in {
         println!("Enter input:");
         std::io::stdin().read_line(&mut input_string).unwrap();
+        input_string = input_string.lines().next().unwrap().to_string();
     } else {
         input_string = std::fs::read_to_string(in_file).unwrap();
     }
-    input_string = input_string.lines().next().unwrap().to_string();
     // Do the encryption
     let mut shake = prompt_password();
     let mut output_string = String::new();
